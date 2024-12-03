@@ -1,6 +1,6 @@
 <script>
 	import Section from './section.svelte';
-	import cliparooMascot from '$assets/cliparoo-mascot.jpeg';
+	import cliparooMascot from '$assets/cliparoo-mascot.jpeg?enhanced';
 	import CliparooPageExample from './cliparoo-page-example.svelte';
 </script>
 
@@ -10,7 +10,7 @@
 			<div class="mb-16 flex flex-col pl-2 sm:mb-8 sm:pl-8">
 				<span>Your</span><span>Smart</span> <span>Clipboard</span>
 			</div>
-			<img
+			<enhanced:img
 				src={cliparooMascot}
 				style="mask-size: contain; mask-repeat: no-repeat;"
 				alt="Cliparoo Mascot"
