@@ -1,5 +1,5 @@
 <script lang="ts">
-	import cliparooSrc from '$lib/assets/cliparoo.png';
+	import cliparooSrc from '$assets/cliparoo.png';
 	import ThemeToggle from './theme-toggle.svelte';
 </script>
 
