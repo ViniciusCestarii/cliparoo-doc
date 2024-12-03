@@ -7,6 +7,6 @@ export default defineConfig({
 	server: {
 		fs: {
 			allow: [path.resolve('./tailwind.config.ts')]
-		},
+		}
 	}
 });
