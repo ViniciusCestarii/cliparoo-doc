@@ -5,6 +5,12 @@
 	import Home from '$lib/components/home.svelte';
 </script>
 
+<svelte:head>
+	<title>Cliparoo</title>
+	<meta name="description" content="Your Smart Clipboard" />
+	<meta name="keywords" content="clipboard, cliparoo, smart clipboard" />
+</svelte:head>
+
 <main>
 	<Home />
 	<Features />
