@@ -1,3 +1,4 @@
+import { browser } from '$app/environment';
 import type { themes } from '../../tailwind.config';
 import { getUserPreferredColorScheme } from './utils';
 
@@ -31,7 +32,7 @@ const initialState: DocStateType = {
 };
 
 export const loadStateFromStorage = () => {
-	const storedState = localStorage.getItem(STATE_KEY);
+	const storedState = browser ? localStorage.getItem(STATE_KEY) : null;
 	const state: DocStateType = storedState ? JSON.parse(storedState) : initialState;
 
 	setTheme(state.theme);
@@ -40,10 +41,12 @@ export const loadStateFromStorage = () => {
 };
 
 export const saveStateToStorage = (state: DocStateType) => {
+	if (!browser) return;
 	localStorage.setItem(STATE_KEY, JSON.stringify(state));
 };
 
 const setTheme = (theme: Theme) => {
+	if (!browser) return;
 	document.documentElement.setAttribute('data-theme', theme);
 };
 
