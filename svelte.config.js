@@ -7,7 +7,7 @@ const config = {
 
 	kit: {
 		alias: {
-			$assets: "src/lib/assets"
+			$assets: 'src/lib/assets'
 		},
 		adapter: adapter()
 	}
