@@ -5,9 +5,9 @@
 </script>
 
 <Section id="home" class="hero max-w-full overflow-x-hidden bg-base-200">
-	<div class="hero-content xl:max-w-screen-lg">
+	<div class="hero-content xl:max-w-screen-lg -mt-20">
 		<div class="flex flex-shrink-0 flex-col text-7xl font-bold">
-			<div class="mb-16 flex flex-col pl-4 sm:mb-8 sm:pl-8">
+			<div class="mb-16 flex flex-col pl-2 sm:mb-8 sm:pl-8">
 				<span>Your</span><span>Smart</span> <span>Clipboard</span>
 			</div>
 			<img
