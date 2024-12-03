@@ -42,37 +42,38 @@
 				aria-label="menu"
 				onclick={toggleMenu}
 			>
-				<div class={cn("swap", isMenuOpen && "swap-active")}>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="lucide lucide-x size-5 swap-on"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg
-						>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="lucide lucide-menu size-5 swap-off"
-							><line x1="4" x2="20" y1="12" y2="12" /><line x1="4" x2="20" y1="6" y2="6" /><line
-								x1="4"
-								x2="20"
-								y1="18"
-								y2="18"
-							/>
-						</svg>
+				<div class={cn('swap', isMenuOpen && 'swap-active')}>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="lucide lucide-x swap-on size-5"
+						><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg
+					>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="lucide lucide-menu swap-off size-5"
+						><line x1="4" x2="20" y1="12" y2="12" /><line x1="4" x2="20" y1="6" y2="6" /><line
+							x1="4"
+							x2="20"
+							y1="18"
+							y2="18"
+						/>
+					</svg>
 				</div>
 			</button>
 			<ul class="hidden space-x-2 sm:flex">
