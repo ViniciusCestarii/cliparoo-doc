@@ -9,7 +9,10 @@ const config = {
 		alias: {
 			$assets: 'src/lib/assets'
 		},
-		adapter: adapter()
+		adapter: adapter(),
+		paths: {
+			base: '/cliparoo-doc' // for GitHub Pages
+		}
 	}
 };
 
