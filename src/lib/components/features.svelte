@@ -4,6 +4,7 @@
 	import ThemePreview from './theme-preview.svelte';
 	import Section from './section.svelte';
 	import CliparooPageExample from './cliparoo-page-example.svelte';
+	import CliparooSearchExample from './cliparoo-search-example.svelte';
 </script>
 
 <Section id="features">
@@ -36,4 +37,14 @@
 			{/each}
 		</div>
 	</div>
+
+	<h3 class="mt-8 text-3xl font-bold">🔍 Powerful Search</h3>
+
+	<p class="text-lg">
+		Searching for something shouldn't feel like a treasure hunt. With Cliparoo, you can quickly find
+		what you need, whether it's a recent entry or a specific snippet. Fast, efficient, and always at
+		your fingertips.
+	</p>
+
+	<CliparooSearchExample />
 </Section>
