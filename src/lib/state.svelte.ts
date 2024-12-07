@@ -7,7 +7,6 @@ const STATE_KEY = 'cliparooDocState';
 export type Theme = (typeof themes)[number];
 
 type DocStateType = {
-	dark?: boolean;
 	theme: Theme;
 };
 
