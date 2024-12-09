@@ -7,11 +7,11 @@
 	interface Props {
 		data: {
 			version: string;
-		}
+		};
 	}
 
-	let { data }: Props = $props()
-	let { version } = data
+	let { data }: Props = $props();
+	let { version } = data;
 </script>
 
 <svelte:head>

@@ -27,7 +27,7 @@
 
 		<h3>Windows</h3>
 
-		<div class="space-y-4 flex flex-col items-center">
+		<div class="flex flex-col items-center space-y-4">
 			{@render downloadButton(
 				`Cliparoo_${version}_x64-setup.exe`,
 				'🏘️ Windows',
@@ -38,7 +38,7 @@
 
 		<h3>Linux</h3>
 
-		<div class="space-y-4 flex flex-col items-center">
+		<div class="flex flex-col items-center space-y-4">
 			{@render downloadButton(
 				`Cliparoo_${version}_amd64.deb`,
 				'📦 .deb Package',
@@ -63,7 +63,7 @@
 
 		<h3>macOS</h3>
 
-		<div class="space-y-4 flex flex-col items-center">
+		<div class="flex flex-col items-center space-y-4">
 			{@render downloadButton(
 				`Cliparoo_${version}_x64.dmg`,
 				'💻 Intel Chip',
