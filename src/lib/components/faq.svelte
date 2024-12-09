@@ -7,7 +7,7 @@
 <Section id="faq">
 	<H3Typography>Frequently Asked Questions</H3Typography>
 
-	<div class="join join-vertical mt-8 max-w-screen-md mx-auto flex">
+	<div class="join join-vertical mx-auto mt-8 flex max-w-screen-md">
 		<Accordion accordionTitle="What is Cliparoo?" accordionName="faq" startOpen>
 			Cliparoo is a clipboard manager that allows you to save and organize your clipboard history.
 		</Accordion>
