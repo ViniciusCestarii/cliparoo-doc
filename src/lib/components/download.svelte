@@ -14,7 +14,7 @@
 	<div class="mt-8">
 		{#snippet downloadButton(file: string, name: string, description: string, className: string)}
 			<a
-				href={`https://github.com/Abdenasser/neohtop/releases/download/v${version}/${file}`}
+				href={`https://github.com/ViniciusCestarii/cliparoo/releases/download/v${version}/${file}`}
 				class={'btn btn-lg flex h-auto flex-col items-start text-lg ' + className}
 			>
 				<span>{name}</span>
