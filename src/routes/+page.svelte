@@ -3,6 +3,15 @@
 	import Faq from '$lib/components/faq.svelte';
 	import Features from '$lib/components/features.svelte';
 	import Home from '$lib/components/home.svelte';
+
+	interface Props {
+		data: {
+			version: string;
+		}
+	}
+
+	let { data }: Props = $props()
+	let { version } = data
 </script>
 
 <svelte:head>
@@ -14,6 +23,6 @@
 <main>
 	<Home />
 	<Features />
-	<Download />
+	<Download {version} />
 	<Faq />
 </main>
