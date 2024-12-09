@@ -7,7 +7,7 @@
 	<div>
 		<div class="relative mb-1 flex h-12 px-2">
 			<input
-				value="window:chatgpt text:cliparoo type:text"
+				value="window:chatgpt text:cliparoo type:text date:>12/04/2024"
 				disabled
 				id="search-clipboard-example"
 				aria-hidden="true"
