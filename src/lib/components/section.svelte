@@ -5,6 +5,6 @@
 	var { class: className, children, ...props }: HTMLAttributes<HTMLElement> = $props();
 </script>
 
-<section class={cn('mx-auto min-h-screen max-w-screen-lg scroll-mt-20', className)} {...props}>
+<section class={cn('mx-auto min-h-screen max-w-screen-lg scroll-mt-20 px-2', className)} {...props}>
 	{@render children?.()}
 </section>
