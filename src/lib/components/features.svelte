@@ -5,12 +5,14 @@
 	import Section from './section.svelte';
 	import CliparooPageExample from './cliparoo-page-example.svelte';
 	import CliparooSearchExample from './cliparoo-search-example.svelte';
+	import H2Typography from './typography/h2-typography.svelte';
+	import H3Typography from './typography/h3-typography.svelte';
 </script>
 
 <Section id="features">
-	<h2 class="text-4xl font-bold">Why use Cliparoo?</h2>
+	<H2Typography class="text-4xl font-bold">Why use Cliparoo?</H2Typography>
 
-	<h3 class="mt-8 text-3xl font-bold">🎨 Fancy Themes</h3>
+	<H3Typography>🎨 Fancy Themes</H3Typography>
 
 	<p class="text-lg">
 		Because life's too short for boring apps. Pick a theme that screams <b>you</b>! Or at least
@@ -38,7 +40,7 @@
 		</div>
 	</div>
 
-	<h3 class="mt-8 text-3xl font-bold">🔍 Powerful Search</h3>
+	<H3Typography>🔍 Powerful Search</H3Typography>
 
 	<p class="text-lg">
 		Searching for something shouldn't feel like a treasure hunt. With Cliparoo, you can quickly find
@@ -48,7 +50,7 @@
 
 	<CliparooSearchExample />
 
-	<h2 class="text-4xl font-bold">📊 Clean Dashboard</h2>
+	<H3Typography>📊 Clean Dashboard</H3Typography>
 
 	<p class="mt-4 text-lg">
 		Visualize your clipboard like never before. Cliparoo's dashboard gives you a bird's-eye view of
@@ -106,7 +108,7 @@
 			/><path d="M21.21 15.89A10 10 0 1 1 8 2.83" /></svg
 		>
 		<span class="absolute bottom-0 left-0 text-sm italic">
-			*Images are for illustrative purposes only.
+			*Images for illustrative purposes.
 		</span>
 	</div>
 </Section>

@@ -1,5 +1,7 @@
 <script lang="ts">
 	import Section from './section.svelte';
+	import H2Typography from './typography/h2-typography.svelte';
+	import H3Typography from './typography/h3-typography.svelte';
 
 	interface Props {
 		version: string;
@@ -9,9 +11,9 @@
 </script>
 
 <Section id="download">
-	<h2 class="text-4xl font-bold">Download Cliparoo <span class="font-normal">V{version}</span></h2>
+	<H2Typography>Download Cliparoo <span class="font-normal">V{version}</span></H2Typography>
 
-	<div class="mt-8">
+	<div class="mx-auto mt-8 max-w-screen-md">
 		{#snippet downloadButton(file: string, name: string, description: string, className: string)}
 			<a
 				href={`https://github.com/ViniciusCestarii/cliparoo/releases/download/cliparoo-v${version}/${file}`}
@@ -25,7 +27,7 @@
 			</a>
 		{/snippet}
 
-		<h3>Windows</h3>
+		<H3Typography class="sm: pl-4">Windows</H3Typography>
 
 		<div class="flex flex-col items-center space-y-4">
 			{@render downloadButton(
@@ -36,7 +38,7 @@
 			)}
 		</div>
 
-		<h3>Linux</h3>
+		<H3Typography class="sm: pl-4">Linux</H3Typography>
 
 		<div class="flex flex-col items-center space-y-4">
 			{@render downloadButton(
@@ -61,7 +63,7 @@
 			)}
 		</div>
 
-		<h3>macOS</h3>
+		<H3Typography class="sm: pl-4">macOS</H3Typography>
 
 		<div class="flex flex-col items-center space-y-4">
 			{@render downloadButton(
