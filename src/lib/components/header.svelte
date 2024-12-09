@@ -77,10 +77,10 @@
 				</div>
 			</button>
 			<ul class="hidden space-x-2 sm:flex">
-				<li><a href="#home">Home</a></li>
-				<li><a href="#features">Features</a></li>
-				<li><a href="#download">Download</a></li>
-				<li><a href="#faq">FAQ</a></li>
+				<li><a class="hover:underline" href="#home">Home</a></li>
+				<li><a class="hover:underline" href="#features">Features</a></li>
+				<li><a class="hover:underline" href="#download">Download</a></li>
+				<li><a class="hover:underline" href="#faq">FAQ</a></li>
 				<li class="flex items-center justify-center">
 					<ThemeToggle />
 				</li>
