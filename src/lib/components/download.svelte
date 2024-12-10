@@ -16,6 +16,7 @@
 	<div class="mx-auto mt-8 max-w-screen-md">
 		{#snippet downloadButton(file: string, name: string, description: string, className: string)}
 			<a
+				onclick={() => gtag('event', 'download', { event_category: 'download', event_label: file })}
 				href={`https://github.com/ViniciusCestarii/cliparoo/releases/download/cliparoo-v${version}/${file}`}
 				class={'btn btn-lg flex h-auto flex-col items-start text-lg ' + className}
 			>
