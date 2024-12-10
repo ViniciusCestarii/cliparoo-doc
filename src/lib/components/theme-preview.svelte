@@ -21,7 +21,7 @@
 				class="col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 bg-base-100 p-2"
 			>
 				<div class="text-sm font-bold sm:text-base">{theme}</div>
-				<div class="hidden flex-wrap gap-1 sm:flex">
+				<div aria-hidden="true" class="hidden flex-wrap gap-1 sm:flex">
 					<div class="flex aspect-square w-5 items-center justify-center rounded bg-primary lg:w-6">
 						<div class="text-sm font-bold text-primary-content">A</div>
 					</div>
