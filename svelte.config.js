@@ -9,9 +9,11 @@ const config = {
 		alias: {
 			$assets: 'src/lib/assets'
 		},
-		adapter: adapter(),
+		adapter: adapter({
+			fallback: '404.html'
+		}),
 		paths: {
-			base: '/cliparoo-doc' // for GitHub Pages
+			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
 		}
 	}
 };
