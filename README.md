@@ -8,5 +8,3 @@
 [![GitHub issues](https://img.shields.io/github/issues/ViniciusCestarii/cliparoo-doc)](https://github.com/ViniciusCestarii/cliparoo-doc/issues)
 
 </div>
-
-_Currenly in development 🚧_
