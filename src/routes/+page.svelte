@@ -3,11 +3,10 @@
 	import Faq from '$lib/components/faq.svelte';
 	import Features from '$lib/components/features.svelte';
 	import Home from '$lib/components/home.svelte';
+	import type { PageData } from './$types';
 
 	interface Props {
-		data: {
-			version: string;
-		};
+		data: PageData
 	}
 
 	let { data }: Props = $props();
