@@ -34,8 +34,6 @@ export const loadStateFromStorage = () => {
 	const storedState = browser ? localStorage.getItem(STATE_KEY) : null;
 	const state: DocStateType = storedState ? JSON.parse(storedState) : initialState;
 
-	setTheme(state.theme);
-
 	return state;
 };
 
