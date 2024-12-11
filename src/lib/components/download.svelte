@@ -14,7 +14,13 @@
 	<H2Typography>Download Cliparoo <span class="font-normal">V{version}</span></H2Typography>
 
 	<div class="mx-auto mt-8 max-w-screen-md">
-		{#snippet downloadButton(file: string, name: string, description: string, className: string, eventName: string)}
+		{#snippet downloadButton(
+			file: string,
+			name: string,
+			description: string,
+			className: string,
+			eventName: string
+		)}
 			<a
 				onclick={() => gtag('event', eventName)}
 				href={`https://github.com/ViniciusCestarii/cliparoo/releases/download/cliparoo-v${version}/${file}`}
