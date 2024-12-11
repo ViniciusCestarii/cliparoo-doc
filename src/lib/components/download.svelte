@@ -14,9 +14,9 @@
 	<H2Typography>Download Cliparoo <span class="font-normal">V{version}</span></H2Typography>
 
 	<div class="mx-auto mt-8 max-w-screen-md">
-		{#snippet downloadButton(file: string, name: string, description: string, className: string)}
+		{#snippet downloadButton(file: string, name: string, description: string, className: string, eventName: string)}
 			<a
-				onclick={() => gtag('event', 'download', { event_category: 'download', event_label: file })}
+				onclick={() => gtag('event', eventName)}
 				href={`https://github.com/ViniciusCestarii/cliparoo/releases/download/cliparoo-v${version}/${file}`}
 				class={'btn btn-lg flex h-auto flex-col items-start text-lg ' + className}
 			>
@@ -35,7 +35,8 @@
 				`Cliparoo_${version}_x64-setup.exe`,
 				'🏘️ Windows',
 				'Windows 10 or later',
-				'btn-primary'
+				'btn-primary',
+				'windows_download'
 			)}
 		</div>
 
@@ -46,21 +47,24 @@
 				`Cliparoo_${version}_amd64.deb`,
 				'📦 .deb Package',
 				'Debian/Ubuntu',
-				'btn-accent'
+				'btn-accent',
+				'linux_download'
 			)}
 
 			{@render downloadButton(
 				`Cliparoo_${version}_amd64.AppImage`,
 				'🐧 AppImage',
 				'Universal Linux',
-				'btn-accent'
+				'btn-accent',
+				'linux_download'
 			)}
 
 			{@render downloadButton(
 				`Cliparoo-${version}-1.x86_64.rpm`,
 				'📦 .rpm Package',
 				'Fedora/RHEL x86_64',
-				'btn-accent'
+				'btn-accent',
+				'linux_download'
 			)}
 		</div>
 
@@ -71,14 +75,16 @@
 				`Cliparoo_${version}_x64.dmg`,
 				'💻 Intel Chip',
 				'macOS 10.15 or later',
-				'btn-secondary'
+				'btn-secondary',
+				'macos_download'
 			)}
 
 			{@render downloadButton(
 				`Cliparoo_${version}_aarch64.dmg`,
 				'🍎 Apple Silicon',
 				'macOS 11.0 or later',
-				'btn-secondary'
+				'btn-secondary',
+				'macos_download'
 			)}
 		</div>
 	</div>
