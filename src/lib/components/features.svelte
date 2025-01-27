@@ -50,6 +50,22 @@
 
 	<CliparooSearchExample />
 
+	<H3Typography>🔒 Data Privacy</H3Typography>
+
+	<p class="text-lg">
+		Your data stays with you. Cliparoo ensures that all your clipboard history is stored locally on your device, 
+		giving you full control and privacy over your information. We never send your data to external servers.
+	</p>
+
+	<div class="mt-4 mb-20 bg-primary p-4 rounded-lg text-white">
+		<h4 class="text-xl font-semibold">How We Protect Your Data</h4>
+		<ul class="list-disc pl-5">
+			<li>All clipboard data is stored locally on your device, meaning it never leaves your system.</li>
+			<li>You have full control over your data, with options to clear your clipboard history at any time.</li>
+			<li>Local data storage means there is no risk of breaches from external servers or third-party services.</li>
+		</ul>
+	</div>
+
 	<H3Typography>📊 Clean Dashboard</H3Typography>
 
 	<p class="mt-4 text-lg">
